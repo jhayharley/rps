@@ -1,5 +1,5 @@
 import time
- import random
+import random
 from getpass import getpass
 
 print("               RULES: The  players must input their own choice and patiently wait for their turn!" )
