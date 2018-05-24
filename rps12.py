@@ -12,6 +12,7 @@ print("                                 ***Welcome to Rock, Paper Scissors Game*
 
 #for the user to input their choice
 class Game(object):
+
     def getInput(self):
         choice = getpass("What are you picking - [(1)ROCK, (2)SCISSORS, (3)PAPER?]\n")
         if self.validate(choice) == True:
@@ -110,14 +111,14 @@ if __name__ == "__main__":
 #determine how many rounds to play
     while True:
         try:
-            num_rounds = int(raw_input("How many points does it take to win? \n"))
+            num_rounds = int(input("How many points does it take to win? \n"))
             break
         except ValueError:
             print("input a integer")
 
 #player's identity
-    player1 = raw_input("Enter your name player 1: ")
-    player2 = raw_input("Enter your name player 2: ")
+    player1 = input("Enter your name player 1: ")
+    player2 = input("Enter your name player 2: ")
 
 #this part is responsible for summing-up the scores and declare the overall winner.
     gamescore = [0,0]
